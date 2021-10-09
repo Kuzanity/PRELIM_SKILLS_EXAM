@@ -8,7 +8,7 @@ class Test_kelvin(unittest.TestCase):
         self.assertEqual(Temperature(farenheit=14).kelvin,263.15)
     def kelvin_testing(self):#kelvin testing
          self.assertEqual(Temperature(kelvin=40).kelvin,40)
-    # def neg_args(self):#negative kelvin testing
-    #     self.assertEqual(Temperature(kelvin=-40).kelvin,-40)
+    def neg_args(self):#negative kelvin testing
+        self.assertEqual(Temperature(kelvin=-40).kelvin,-40)
 if __name__ == '__main__':
     unittest.main()
